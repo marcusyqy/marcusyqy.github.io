@@ -5,7 +5,7 @@
 
 <svelte:head>
     <title>
-        Landing Page
+        Marcus Yong Portfolio
     </title>
 </svelte:head>
 

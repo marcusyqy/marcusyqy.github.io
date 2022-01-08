@@ -7,45 +7,46 @@
 
 <nav>
 	<ul class="left-side">
-		<li><a href="/"><img src="assets/favicon.png" alt="Home" class="logo" /></a></li>
-		<li><a href="/about"><b>About</b></a></li>
+		<li><a href="/"><img src="assets/favicon.svg" alt="Home" class="logo" /></a></li>
 	</ul>
 	<ul class="right-side">
-		<li>
-			<a href="https://github.com/marcusyqy"
-				><Icon data={github} style="width:2.4rem; height:2.4rem;" /></a
-			>
-		</li>
-		<li>
-			<a href="https://www.linkedin.com/in/marcus-yqy/"
-				><Icon data={linkedin} style="width:2.4rem; height:2.4rem;" /></a
-			>
-		</li>
-		<li>
-			<a href="https://www.instagram.com/marcusyqy/"
-				><Icon data={instagram} style="width:2.4rem; height:2.4rem;" /></a
-			>
-		</li>
+		<li class="letters"><a href="/about"><b>About Me</b></a></li>
+		<li class="letters"><a href="/about"><b>Work</b></a></li>
+		<li class="letters"><a href="/about"><b>Blog</b></a></li>
+		<li class="letters"><a href="/contact"><b>Contact Me</b></a></li>
 	</ul>
 </nav>
 
 <style>
-    nav {
-        display:box;
+	nav {
+		height: 2.4rem;
+		width: 100%;
+		padding: 0rem;
+		margin: 0rem;
+		height: 3rem;
+	}
+
+    a {
+        color : white;
     }
 
 	ul {
 		list-style-type: none;
-		margin: 0;
-		padding: 0;
+        margin: 0px;
+		padding: .5rem;
 		overflow: hidden;
+        font-size: 1rem;
+        color: white;
 		/* background-color: #333333; */
-        font-size: 2rem;
 	}
 
-    li {
-      float: left;
-    }
+	li {
+		float: left;
+	}
+
+	.letters {
+        padding: .4rem;
+	}
 
 	.logo {
 		width: 2.4rem;

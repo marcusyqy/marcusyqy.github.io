@@ -4,7 +4,7 @@
 
 <svelte:head>
     <title>
-        About Page
+        About Marcus
     </title>
 </svelte:head>
 <h1 transition:slide>About Page</h1>
