@@ -11,9 +11,9 @@
 	</ul>
 	<ul class="right-side">
 		<li class="letters"><a href="/about"><b>About Me</b></a></li>
-		<li class="letters"><a href="/about"><b>Work</b></a></li>
-		<li class="letters"><a href="/about"><b>Blog</b></a></li>
-		<li class="letters"><a href="/contact"><b>Contact Me</b></a></li>
+		<li class="letters"><a href="/work"><b>Work</b></a></li>
+		<li class="letters"><a href="/blog"><b>Blog</b></a></li>
+		<li class="letters"><a href="/contact-me"><b>Contact Me</b></a></li>
 	</ul>
 </nav>
 
