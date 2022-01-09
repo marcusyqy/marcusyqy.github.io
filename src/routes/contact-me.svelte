@@ -9,7 +9,7 @@
 	<title>Contact Marcus Yong</title>
 </svelte:head>
 
-<div transition:fade>
+<div transition:fade class="overall">
 	<h1>Contact Me</h1>
     <div style="text-align:center;">
         <BoopAction boopParams={{ y: 5, timing: 200}}>
@@ -31,6 +31,11 @@
 </div>
 
 <style>
+    .overall {
+        width: 50%;
+        margin:auto;
+    }
+
 	a {
         padding: 0.2rem;
         font-size: 0.4rem;
@@ -47,13 +52,13 @@
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
-		/* padding-bottom: .5rem; */
-		/* padding-top: .5rem; */
-		/* padding-left:0rem; */
-		/* padding-right:0rem; */
 		overflow: hidden;
 		font-size: 1rem;
 		color: white;
 		text-align: center;
 	}
+
+    h1 {
+        text-align:center;
+    }
 </style>

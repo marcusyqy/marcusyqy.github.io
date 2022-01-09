@@ -6,19 +6,17 @@
 	<title>Marcus Yong Portfolio</title>
 </svelte:head>
 
-<div class="box">
-	<div transition:slide class="words">
+<div class="box" transition:slide>
+	<div class="words">
 		<p class="ini-para">Hello, I am</p>
 		<p class="name">Marcus Yong.</p>
 		<p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
-        <div style="padding-top:2rem;">
-            <a href="https://www.linkedin.com/in/marcus-yqy/"
-                >Resume</a
-            >
-        </div>
+		<div style="padding-top:2rem;">
+			<a href="../static/docs/resume.pdf" download="marcus-resume"> Resume</a>
+		</div>
 	</div>
-    <div style="width:4rem; flex-shrink:none;"></div>
-	<div transition:slide class="profile-pic">
+	<div style="width:4rem; flex-shrink:none;" />
+	<div class="profile-pic">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img src="assets/profile.jpg" alt="profile picture here." />
 	</div>
@@ -30,19 +28,19 @@
 		display: flex;
 		flex-direction: row;
 		/* padding-right:20rem; */
-        margin: auto;
-        align-items: center;
-        justify-content:center;
+		margin: auto;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.profile-pic {
 		float: right;
-        /* width: 30%; */
+		/* width: 30%; */
 	}
 
 	img {
-        width: 20rem;
-        height:20rem;
+		width: 20rem;
+		height: 20rem;
 		/* height: 20rem; */
 		border-radius: 50%;
 		border-style: solid;
@@ -62,7 +60,7 @@
 	}
 
 	.words {
-        width:40%;
+		width: 40%;
 		min-width: 25rem;
 		max-width: 50%;
 		display: block;
@@ -86,22 +84,21 @@
 		font-family: var(--big-font);
 		font-size: 0.9rem;
 		color: white;
-        text-decoration:underline;
-        text-decoration-color:var(--teal);
+		text-decoration: underline;
+		text-decoration-color: var(--teal);
 	}
 
-    a {
-        border:0.1rem solid var(--teal);
-        border-color:var(--teal);
-        background-color:var(--grey);
-        font-family: var(--small-font);
-        font-size:0.7rem;
-        padding: 1rem;
-        padding-left: 3rem;
-        border-radius:1rem;
-        padding-right: 3rem;
-        text-decoration:none;
-        color:white;
-    }
-
+	a {
+		border: 0.1rem solid var(--teal);
+		border-color: var(--teal);
+		background-color: var(--grey);
+		font-family: var(--small-font);
+		font-size: 0.7rem;
+		padding: 1rem;
+		padding-left: 3rem;
+		border-radius: 1rem;
+		padding-right: 3rem;
+		text-decoration: none;
+		color: white;
+	}
 </style>
