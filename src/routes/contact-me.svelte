@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div transition:fade>
-	<h1><u>Contact Me</u></h1>
+	<h1>Contact Me</h1>
     <div style="text-align:center;">
         <BoopAction boopParams={{ y: 5, timing: 200}}>
             <a href="https://github.com/marcusyqy">
@@ -36,12 +36,12 @@
         font-size: 0.4rem;
 		margin: 0px;
 		overflow: hidden;
+        color:white;
 	}
 
-	h1 {
-		color: white;
-		text-align: center;
-	}
+    a:hover {
+        color: var(--teal);
+    }
 
 	ul {
 		list-style-type: none;

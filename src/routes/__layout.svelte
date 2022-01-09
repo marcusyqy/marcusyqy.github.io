@@ -7,9 +7,7 @@
 </svelte:head>
 
 <Nav/>
-<div style="max-width:500px; margin:auto;">
 <slot></slot>
-</div>
 
 <style global>
     :root {
@@ -23,4 +21,11 @@
         font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         color:white;
     }
+
+	h1 {
+		color: white;
+        text-decoration: underline;
+        text-decoration-color: var(--teal);
+	}
+
 </style>

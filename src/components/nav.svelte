@@ -35,6 +35,7 @@
 		position: -webkit-sticky; /* Safari */
 		position: sticky;
 		top: 0;
+        width:100%-4rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		padding-top: 1rem;
@@ -74,7 +75,8 @@
 		/* font-family: 'Fira Code', monospace; */
 		font-family: var(--small-font);
 	}
-	.letters:hover {
+
+	a:hover {
 		color: var(--teal);
 	}
 
