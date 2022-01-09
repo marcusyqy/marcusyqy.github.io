@@ -72,7 +72,7 @@
 	.ini-para {
 		padding-top: 2rem;
 		font-family: var(--small-font);
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		color: var(--teal);
 	}
 
