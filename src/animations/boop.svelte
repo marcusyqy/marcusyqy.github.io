@@ -1,5 +1,5 @@
 <script lang="ts">
-	import boop from '../animations/boop';
+	import boop from './boop';
 	export let boopParams;
 	let isBooped = false;
 
