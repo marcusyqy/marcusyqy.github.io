@@ -48,16 +48,6 @@
         color: var(--teal);
     }
 
-	ul {
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		overflow: hidden;
-		font-size: 1rem;
-		color: white;
-		text-align: center;
-	}
-
     h1 {
         text-align:center;
     }

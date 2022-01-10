@@ -31,7 +31,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          branch: gh-pages
-          folder: public
+        run : npm run deploy
