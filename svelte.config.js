@@ -9,10 +9,6 @@ const config = {
 
 	kit: {
         adapter: adapter(),
-        paths: {
-			base: '/portfolio-website',
-			assets: '/portfolio-website'
-		},
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	}

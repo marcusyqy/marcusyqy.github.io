@@ -1,14 +1,3 @@
-<script lang="ts" context="module">
-	import { base } from '$app/paths';
-
-	export async function load({ fetch }) {
-		const posts = await fetch(`${base}/index.json`).then((r) => r.json());
-		return {
-			props: { posts }
-		};
-	}
-</script>
-
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 </script>
@@ -23,7 +12,7 @@
 		<p class="name">Marcus Yong.</p>
 		<p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
 		<div style="padding-top:2rem;">
-			<a href="../static/docs/resume.pdf" download="marcus-resume"> Resume</a>
+			<a href="docs/resume.pdf" download="marcus-resume"> Resume</a>
 		</div>
 	</div>
 	<div style="width:4rem; flex-shrink:none;" />
