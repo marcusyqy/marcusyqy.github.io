@@ -12,7 +12,7 @@
     "deploy": "npx gh-pages -d build -t true",
     "build": "run-script-os",
     "build:win32": "(if exist build rmdir /Q /S build) && svelte-kit build && wsl touch build/.nojekyll",
-    "build-linux": "rm -rf build && svelte-kit build && touch build/.nojekyll",
+    "build:darwin:linux": "rm -rf build && svelte-kit build && touch build/.nojekyll",
     "publish": "npm run build && npm run deploy"
   },
   "devDependencies": {
