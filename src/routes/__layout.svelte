@@ -18,7 +18,7 @@
     }
     body {
         background-color: #1a1a1a;
-        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+        font-family: var(--big-font);
         color:white;
     }
 
