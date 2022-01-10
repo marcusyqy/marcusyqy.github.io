@@ -1,0 +1,3 @@
+import{S as h,i as f,s as m,j as p,e as b,t as x,G as v,d as n,l as A,c as y,a as P,g as j,f as c,D as k,P as q,R as E,T as d,U as u}from"../chunks/vendor-00a7d0ed.js";function S(_){let s,t,l,a,r;return{c(){s=p(),t=b("h1"),l=x("About Page"),this.h()},l(e){v('[data-svelte="svelte-3r8xsz"]',document.head).forEach(n),s=A(e),t=y(e,"H1",{});var i=P(t);l=j(i,"About Page"),i.forEach(n),this.h()},h(){document.title=`\r
+        About Marcus\r
+    `},m(e,o){c(e,s,o),c(e,t,o),k(t,l),r=!0},p:q,i(e){r||(E(()=>{a||(a=d(t,u,{},!0)),a.run(1)}),r=!0)},o(e){a||(a=d(t,u,{},!1)),a.run(0),r=!1},d(e){e&&n(s),e&&n(t),e&&a&&a.end()}}}class z extends h{constructor(s){super();f(this,s,null,S,m,{})}}export{z as default};
