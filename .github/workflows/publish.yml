@@ -27,7 +27,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run build-linux
+          npm run build
 
       # Runs a set of commands using the runners shell
       - name: Deploy to GitHub Pages
