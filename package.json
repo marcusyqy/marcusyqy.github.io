@@ -11,8 +11,7 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
     "build": "svelte-kit build && wsl touch build/.nojekyll",
     "deploy": "npm run build && npx gh-pages -d build -t true",
-    "build-linux": "svelte-kit build && touch build/.nojekyll",
-    "deploy-linux": "npm run build && npx gh-pages -d build -t true"
+    "build-linux": "svelte-kit build && touch build/.nojekyll"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
