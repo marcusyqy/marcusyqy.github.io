@@ -15,7 +15,7 @@
 			<a href="docs/resume.pdf" download="marcus-resume"> Resume</a>
 		</div>
 	</div>
-	<div style="width:4rem; flex-shrink:none;" />
+	<div class="spacing" />
 	<div class="profile-pic">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img src="assets/profile.jpg" alt="profile picture here." />
@@ -24,7 +24,7 @@
 
 <style>
 	.box {
-		width: 50%;
+        width:50%;
 		display: flex;
 		flex-direction: row;
 		/* padding-right:20rem; */
@@ -37,9 +37,14 @@
 		float: right;
 	}
 
+    .spacing {
+        width:50px;
+        flex-shrink:none;
+    }
+
 	img {
-		width: 20rem;
-		height: 20rem;
+		width: 300px;
+		height: 300px;
 		/* height: 20rem; */
 		border-radius: 50%;
 		border-style: solid;
@@ -59,8 +64,6 @@
 	}
 
 	.words {
-		width: 40%;
-		min-width: 25rem;
 		max-width: 50%;
 		display: block;
 		float: left;
@@ -104,15 +107,19 @@
     @media only screen and (max-width : 767px) {
         .box{
             flex-direction: column;
+            width:100%;
         }
+
+        img {
+            width:200px;
+            height:200px;
+        }
+
         .words {
             display:flex;
             justify-content:center;
-        }
-
-        .desc {
-            padding-right:1rem;
-            padding-left:1rem;
+            align-content:center;
+            flex-direction:column;
         }
 
         .profile-pic {
@@ -121,6 +128,10 @@
 
         * {
             text-align: center;
+        }
+
+        .spacing {
+            display:none;
         }
 
     }

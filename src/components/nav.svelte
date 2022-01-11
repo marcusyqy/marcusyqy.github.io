@@ -44,7 +44,8 @@
 
     @media only screen and (max-width : 767px) {
         nav {
-            padding-right:0.5rem;
+            padding-right:20px;
+            padding-left:20px;
         }
     }
 
