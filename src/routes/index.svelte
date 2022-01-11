@@ -12,7 +12,7 @@
 		<p class="name">Marcus Yong.</p>
 		<p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
 		<div style="padding-top:2rem;">
-			<a href="docs/resume.pdf" download="marcus-resume"> Resume</a>
+			<a href="docs/resume.pdf" download="marcus-resume">Resume</a>
 		</div>
 	</div>
 	<div class="spacing" />
@@ -35,17 +35,17 @@
 
 	.profile-pic {
 		float: right;
+        margin:10px;
 	}
 
     .spacing {
-        width:50px;
+        width:100px;
         flex-shrink:none;
     }
 
 	img {
 		width: 300px;
 		height: 300px;
-		/* height: 20rem; */
 		border-radius: 50%;
 		border-style: solid;
 		border-color: var(--teal);
@@ -68,6 +68,7 @@
 		max-width: 50%;
 		display: block;
 		float: left;
+        margin:10px;
 	}
 
 	.ini-para {
@@ -127,10 +128,5 @@
         * {
             text-align: center;
         }
-
-        .spacing {
-            display:none;
-        }
-
     }
 </style>
