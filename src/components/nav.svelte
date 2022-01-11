@@ -1,8 +1,24 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Icon from 'svelte-awesome';
-	import { github, linkedin, instagram } from 'svelte-awesome/icons';
 	import Boop from '../animations/boop.svelte';
+
+	let showMobileMenu: Boolean = false;
+	// Mobile menu click event handler
+	const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
+
+	// Media match query handler
+	const mediaQueryHandler = (e) => {
+		// Reset mobile state
+		if (!e.matches) {
+			showMobileMenu = false;
+		}
+	};
+
+	onMount(() => {
+		const mediaListener = window.matchMedia('(max-width: 767px)');
+		mediaListener.addListener(mediaQueryHandler);
+	});
+
 </script>
 
 <nav>
@@ -35,7 +51,7 @@
 		position: -webkit-sticky; /* Safari */
 		position: sticky;
 		top: 0;
-        width:100%-4rem;
+		width: 100%-4rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		padding-top: 1rem;

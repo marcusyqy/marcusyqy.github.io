@@ -101,4 +101,15 @@
 		text-decoration: none;
 		color: white;
 	}
+
+    @media only screen and (max-width : 767px) {
+        .box{
+            flex-direction: column;
+        }
+
+        .profile-pic {
+            padding-top:2rem;
+        }
+
+    }
 </style>
