@@ -27,7 +27,7 @@
 		padding-bottom: 1rem;
 		margin: 0rem;
 		height: 3rem;
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        box-shadow: var(--box-shadow-shade);
 		background-color: var(--grey);
 	}
 
@@ -44,8 +44,8 @@
 
     @media only screen and (max-width : 767px) {
         nav {
-            padding-right:20px;
-            padding-left:20px;
+            padding-right:40px;
+            padding-left:40px;
         }
     }
 
