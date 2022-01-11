@@ -64,6 +64,7 @@
 	}
 
 	.words {
+        min-width:340px;
 		max-width: 50%;
 		display: block;
 		float: left;
@@ -116,14 +117,11 @@
         }
 
         .words {
+            min-width:unset;
             display:flex;
             justify-content:center;
             align-content:center;
             flex-direction:column;
-        }
-
-        .profile-pic {
-            padding-top:2rem;
         }
 
         * {
