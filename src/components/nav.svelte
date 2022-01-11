@@ -41,4 +41,11 @@
 		width: 2rem;
 		height: 2rem;
 	}
+
+    @media only screen and (max-width : 767px) {
+        nav {
+            padding-right:0.5rem;
+        }
+    }
+
 </style>

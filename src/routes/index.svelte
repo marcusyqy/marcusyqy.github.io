@@ -105,6 +105,15 @@
         .box{
             flex-direction: column;
         }
+        .words {
+            display:flex;
+            justify-content:center;
+        }
+
+        .desc {
+            padding-right:1rem;
+            padding-left:1rem;
+        }
 
         .profile-pic {
             padding-top:2rem;
