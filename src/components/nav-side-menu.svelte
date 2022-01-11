@@ -16,7 +16,7 @@
         color: white;
         box-shadow: var(--box-shadow-prominent);
         /* border-radius: 10px; */
-        z-index:-1;
+        z-index:10;
     }
 
     #menu {

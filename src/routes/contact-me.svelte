@@ -12,21 +12,15 @@
 <div transition:fade class="overall">
 	<h1>Contact Me</h1>
     <div style="text-align:center;">
-        <BoopAction boopParams={{ y: 5, timing: 200}}>
-            <a href="https://github.com/marcusyqy">
-                <Icon data={github} style="width:2.4rem; height:2.4rem;" />
-            </a>
-        </BoopAction>
-        <BoopAction boopParams={{ y: 5, timing: 200}}>
-            <a href="https://www.linkedin.com/in/marcus-yqy/"
-                ><Icon data={linkedin} style="width:2.4rem; height:2.4rem;" /></a
-            >
-        </BoopAction>
-        <BoopAction boopParams={{ y: 5, timing: 200}}>
-            <a href="https://www.instagram.com/marcusyqy/"
-                ><Icon data={instagram} style="width:2.4rem; height:2.4rem;" /></a
-            >
-        </BoopAction>
+        <a href="https://github.com/marcusyqy">
+            <Icon data={github} style="width:2.4rem; height:2.4rem;" />
+        </a>
+        <a href="https://www.linkedin.com/in/marcus-yqy/"
+            ><Icon data={linkedin} style="width:2.4rem; height:2.4rem;" /></a
+        >
+        <a href="https://www.instagram.com/marcusyqy/"
+            ><Icon data={instagram} style="width:2.4rem; height:2.4rem;" /></a
+        >
     </div>
 </div>
 

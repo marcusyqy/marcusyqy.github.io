@@ -19,9 +19,13 @@
 		transition: transform 0.3s ease-in-out;
 	}
 
+    button:hover > svg line {
+        stroke:var(--teal);
+    }
+
 	svg line {
 		/* `currentColor` means inherit color from the text color */
-		stroke: white;
+        stroke: white;
 		stroke-width: 3;
 		transition: transform 0.3s ease-in-out;
 		border-style: none;
