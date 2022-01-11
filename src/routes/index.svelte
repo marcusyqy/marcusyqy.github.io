@@ -35,7 +35,6 @@
 
 	.profile-pic {
 		float: right;
-		/* width: 30%; */
 	}
 
 	img {
@@ -109,6 +108,10 @@
 
         .profile-pic {
             padding-top:2rem;
+        }
+
+        * {
+            text-align: center;
         }
 
     }
