@@ -106,7 +106,7 @@
 
     @media only screen and (max-width : 767px) {
         .box{
-            flex-direction: column;
+            flex-direction: column-reverse;
             width:100%;
         }
 
