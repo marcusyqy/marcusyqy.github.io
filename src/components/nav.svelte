@@ -2,53 +2,59 @@
 	import { onMount } from 'svelte';
 	import Boop from '../animations/boop.svelte';
 
-	let showMobileMenu: Boolean = false;
-	// Mobile menu click event handler
-	const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
-
-	// Media match query handler
-	const mediaQueryHandler = (e) => {
-		// Reset mobile state
-		if (!e.matches) {
-			showMobileMenu = false;
-		}
-	};
-
-	onMount(() => {
-		const mediaListener = window.matchMedia('(max-width: 767px)');
-		mediaListener.addListener(mediaQueryHandler);
-	});
-
+	/* let showMobileMenu: Boolean = false; */
+	/* // Mobile menu click event handler */
+	/* const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu); */
+	/*  */
+	/* // Media match query handler */
+	/* const mediaQueryHandler = (e) => { */
+	/*     // Reset mobile state */
+	/*     if (!e.matches) { */
+	/*         showMobileMenu = false; */
+	/*     } */
+	/* }; */
+	/*  */
+	/* onMount(() => { */
+	/*     const mediaListener = window.matchMedia('(max-width: 767px)'); */
+	/*     mediaListener.addListener(mediaQueryHandler); */
+	/* }); */
 </script>
 
 <nav>
-	<ul class="left-side">
-		<li style=":0.1rem;">
-			<Boop boopParams={{ scale: 1.2, timing: 200 }}>
-				<a href="/"><img src="assets/favicon-dark.png" alt="Home" class="logo" /></a></Boop
-			>
-		</li>
-	</ul>
-	<ul class="right-side">
-		<li class="letters">
-			<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/about"><b>About Me</b></a></Boop>
-		</li>
-		<li class="letters">
-			<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/work"><b>Work</b></a></Boop>
-		</li>
-		<li class="letters">
-			<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/blog"><b>Blog</b></a></Boop>
-		</li>
-		<li class="letters">
-			<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/contact-me"><b>Contact</b></a></Boop>
-		</li>
-	</ul>
-	<div class="line" />
+	<div class="flexibox">
+		<div>
+			<ul>
+				<li style=":0.1rem;">
+					<Boop boopParams={{ scale: 1.2, timing: 200 }}>
+						<a href="/"><img src="assets/favicon-dark.png" alt="Home" class="logo" /></a></Boop
+					>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/about"><b>About Me</b></a></Boop>
+				</li>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/work"><b>Work</b></a></Boop>
+				</li>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/blog"><b>Blog</b></a></Boop>
+				</li>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}
+						><a href="/contact-me"><b>Contact</b></a></Boop
+					>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
 <style>
 	nav {
-		position: -webkit-sticky; /* Safari */
+		position: -webkit-sticky; /*[> Safari <]*/
 		position: sticky;
 		top: 0;
 		width: 100%-4rem;
@@ -59,8 +65,15 @@
 		margin: 0rem;
 		height: 3rem;
 		/* border-bottom: 0.1rem solid rgba(0.8,0.8,0.8,1.0); */
-		border-bottom: 0.1rem solid rgba(0, 0, 0, 0.4);
+		/* border-bottom: 0.1rem solid rgba(0, 0, 0, 0.4); */
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 		background-color: var(--grey);
+	}
+
+	.flexibox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	a {
@@ -99,13 +112,5 @@
 	.logo {
 		width: 2rem;
 		height: 2rem;
-	}
-
-	.left-side {
-		float: left;
-	}
-
-	.right-side {
-		float: right;
 	}
 </style>

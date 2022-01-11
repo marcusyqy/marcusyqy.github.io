@@ -7,6 +7,7 @@
 </svelte:head>
 
 <Nav/>
+<div style="padding-top:2rem;"></div>
 <slot></slot>
 
 <style global>
