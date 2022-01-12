@@ -9,14 +9,14 @@
 <style>
     #container {
         position: absolute;
-        height: 100vh;
+        /* height: 100vh; */
         top: 5rem;
         overflow-y: auto;
         background-color: var(--grey);
         color: white;
         box-shadow: var(--box-shadow-prominent);
-        /* border-radius: 10px; */
-        z-index:10;
+        border-radius: 10px;
+        padding-bottom:5rem;
     }
 
     #menu {
@@ -28,8 +28,9 @@
 
 </style>
 
-<div id="container" style="width: {width}; right: {open ? '0px' : ('-' + width)}; transition: right {duration}s ease-in-out">
+<div id="container" style="width: {width}; left: {open ? '0px' : ('-' + width)}; transition: left {duration}s ease-in-out">
     <div id="menu" style="padding: {padding}; padding-top: {paddingTop};">
         <slot></slot>
     </div>
 </div>
+
