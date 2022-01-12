@@ -16,7 +16,6 @@
         color: white;
         box-shadow: var(--box-shadow-prominent);
         border-radius: 10px;
-        padding-bottom:5rem;
         text-align:center;
     }
 
