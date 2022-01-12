@@ -4,7 +4,7 @@
 
     export let open = false;
     export let duration = 0.4;
-    export let width = window.innerWidth + 'px';
+    export let width = '300px';
     export let padding = '25px';
     export let paddingTop = '50px';
 

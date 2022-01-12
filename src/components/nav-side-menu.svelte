@@ -9,7 +9,7 @@
 <style>
     #container {
         position: absolute;
-        /* height: 100vh; */
+        height: 100vh;
         top: 5rem;
         overflow-y: auto;
         background-color: var(--grey);
@@ -17,6 +17,7 @@
         box-shadow: var(--box-shadow-prominent);
         border-radius: 10px;
         padding-bottom:5rem;
+        text-align:center;
     }
 
     #menu {
