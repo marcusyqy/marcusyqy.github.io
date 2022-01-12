@@ -1,32 +1,14 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Boop from '../animations/boop.svelte';
 	import Hamburger from './hamburger-menu.svelte';
 	import MediaQuery from '../helpers/media-query.svelte';
 
-	let showNormalMenu: boolean = false;
 	let openMobileMenu: boolean = false;
 
 	// Mobile menu click event handler
 	const handleMobileIconClick = () => {
 		openMobileMenu = !openMobileMenu;
 	};
-
-	// Media match query handler
-	const mediaQueryHandler = (e: MediaQueryListEvent) => {
-		// Reset mobile state
-		if (!e.matches) {
-			showNormalMenu = true;
-			openMobileMenu = false;
-		} else {
-			showNormalMenu = false;
-		}
-	};
-
-	onMount(() => {
-		const mediaListener = window.matchMedia('(max-width: 767px)');
-		mediaListener.addListener(mediaQueryHandler);
-	});
 </script>
 
 <div>
@@ -76,16 +58,6 @@
 		align-items: center;
 	}
 
-	.bar {
-		display: block;
-		width: 25px;
-		height: 3px;
-		margin: 5px auto;
-		-webkit-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-		background-color: #101010;
-	}
-
 	ul {
 		list-style-type: none;
 		margin: 0px;
@@ -120,20 +92,6 @@
 	}
 
 	@media only screen and (max-width: 768px) {
-		/* .nav-menu { */
-		/*     position: fixed; */
-		/*     left: -100%; */
-		/*     top: 5rem; */
-		/*     flex-direction: column; */
-		/*     background-color: #fff; */
-		/*     width: 100%; */
-		/*     border-radius: 10px; */
-		/*     text-align: center; */
-		/*     transition: 0.3s; */
-		/*     box-shadow: */
-		/*         0 10px 27px rgba(0, 0, 0, 0.05); */
-		/* } */
-
 		.letters {
 			margin: 2.5rem 0;
 		}
