@@ -32,23 +32,6 @@
 <div>
 	<MediaQuery query="(max-width: 767px)" let:matches>
 		{#if matches}
-			<ul class="nav-menu">
-				<li class="letters">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/about"><b>About Me</b></a></Boop>
-				</li>
-				<li class="letters">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/work"><b>Work</b></a></Boop>
-				</li>
-				<li class="letters">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/blog"><b>Blog</b></a></Boop>
-				</li>
-				<li class="letters">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}
-						><a href="/contact-me"><b>Contact</b></a></Boop
-					>
-				</li>
-			</ul>
-		{:else}
 			<Hamburger bind:open={openMobileMenu}>
 				<a style="padding-top:50px;font-size=1rem;" on:click={handleMobileIconClick} href="/about"
 					><b>About Me</b></a
@@ -65,6 +48,23 @@
 					href="/contact-me"><b>Contact</b></a
 				>
 			</Hamburger>
+		{:else}
+			<ul class="nav-menu">
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/about"><b>About Me</b></a></Boop>
+				</li>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/work"><b>Work</b></a></Boop>
+				</li>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a href="/blog"><b>Blog</b></a></Boop>
+				</li>
+				<li class="letters">
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}
+						><a href="/contact-me"><b>Contact</b></a></Boop
+					>
+				</li>
+			</ul>
 		{/if}
 	</MediaQuery>
 </div>
