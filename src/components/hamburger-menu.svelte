@@ -8,8 +8,6 @@
     export let padding = '25px';
     export let paddingTop = '50px';
 
-    console.log(innerWidth);
-
     let burgerProps = {
         duration: duration,
     }
