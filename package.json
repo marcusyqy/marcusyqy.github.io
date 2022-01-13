@@ -36,6 +36,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@icons-pack/svelte-simple-icons": "^2.3.0",
     "svelte-awesome": "^2.4.2"
   }
 }
