@@ -1,25 +1,34 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
+    import { onMount } from 'svelte';
+
+    let ready = false;
+
+    onMount(()=> ready = true);
 </script>
 
 <svelte:head>
 	<title>Marcus Yong Portfolio</title>
 </svelte:head>
 
-<div class="box" transition:slide>
-	<div class="words">
-		<p class="ini-para">Hello, I am</p>
-		<p class="name">Marcus Yong.</p>
-		<p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
-		<div style="padding-top:2rem;">
-			<a href="docs/resume.pdf" download="marcus-resume">Resume</a>
-		</div>
-	</div>
-	<div class="spacing" />
-	<div class="profile-pic">
-		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img src="assets/profile.jpg" alt="profile picture here." />
-	</div>
+<div>
+    {#if ready}
+    <div class="box" transition:slide>
+        <div class="words">
+            <p class="ini-para">Hello, I am</p>
+            <p class="name">Marcus Yong.</p>
+            <p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
+            <div style="padding-top:2rem;">
+                <a href="docs/resume.pdf" download="marcus-resume">Resume</a>
+            </div>
+        </div>
+        <div class="spacing" />
+        <div class="profile-pic">
+            <!-- svelte-ignore a11y-img-redundant-alt -->
+            <img src="assets/profile.jpg" alt="profile picture here." />
+        </div>
+    </div>
+    {/if}
 </div>
 
 <style>
