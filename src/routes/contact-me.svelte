@@ -2,7 +2,6 @@
 	import Icon from 'svelte-awesome';
 	import { github, linkedin, instagram, twitter, twitch} from 'svelte-awesome/icons';
 	import { fade } from 'svelte/transition';
-	import BoopAction from '../animations/boop.svelte';
 </script>
 
 <svelte:head>

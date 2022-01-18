@@ -4,11 +4,12 @@
     import NavMenu from './nav-menu.svelte'
 </script>
 
+
 <nav>
 	<div class="flexibox">
 		<div>
             <Boop boopParams={{ scale: 1.2, timing: 200 }}>
-                <a href="/"><img src="assets/favicon-dark.png" alt="Home" class="logo" /></a></Boop
+                <a href="/"><img src="/../assets/favicon-dark.png" alt="Home" class="logo" /></a></Boop
                 >
 		</div>
         <NavMenu/>
