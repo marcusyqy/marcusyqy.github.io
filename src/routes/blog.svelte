@@ -28,7 +28,7 @@
     }
 
 	.description {
-		font-size: 1.2rem;
+		font-size: 1.0rem;
         font-weight:lighter;
         padding:0rem;
         font-family: var(--small-font);

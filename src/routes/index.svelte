@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
     import { onMount } from 'svelte';
+    import {typewriter} from '../animations/typewriter';
 
     let ready = false;
 
@@ -16,7 +17,7 @@
     <div class="box" transition:slide>
         <div class="words">
             <p class="ini-para">Hello, I am</p>
-            <p class="name">Marcus Yong.</p>
+            <p class="name" transition:typewriter>Marcus Yong.</p>
             <p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
             <div style="padding-top:2rem;">
                 <a href="docs/resume.pdf" download="marcus-resume">Resume</a>
