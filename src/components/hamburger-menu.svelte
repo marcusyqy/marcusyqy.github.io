@@ -1,6 +1,6 @@
 <script>
-    import BurgerButton from './hamburger-button.svelte'
-    import SideMenu from './nav-side-menu.svelte'
+    import BurgerButton from './hamburger-button.svelte';
+    import SideMenu from './nav-side-menu.svelte';
 
     export let open = false;
     export let duration = 0.4;
@@ -21,6 +21,8 @@
 
 <BurgerButton {...burgerProps} bind:open={open}/>
 
-<SideMenu {...menuProps} bind:open={open}>
-    <slot></slot>
-</SideMenu>
+{#if open}
+    <SideMenu {...menuProps} bind:open={open}>
+        <slot></slot>
+    </SideMenu>
+{/if}

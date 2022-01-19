@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Boop from '../animations/boop.svelte';
     import NavMenu from './nav-menu.svelte'
+    let openMobileMenu : boolean;
 </script>
 
 
@@ -9,10 +9,10 @@
 	<div class="flexibox">
 		<div>
             <Boop boopParams={{ scale: 1.2, timing: 200 }}>
-                <a href="/"><img src="/../assets/favicon-dark.png" alt="Home" class="logo" /></a></Boop
+                <a href="/" on:click={() => openMobileMenu = false}><img src="/../assets/favicon-dark.png" alt="Home" class="logo" /></a></Boop
                 >
 		</div>
-        <NavMenu/>
+        <NavMenu bind:openMobileMenu/>
 	</div>
 </nav>
 
@@ -49,5 +49,4 @@
             padding-left:40px;
         }
     }
-
 </style>

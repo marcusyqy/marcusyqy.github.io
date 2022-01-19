@@ -1,14 +1,16 @@
+
 <script lang="ts">
 	import Boop from '../animations/boop.svelte';
 	import Hamburger from './hamburger-menu.svelte';
 	import MediaQuery from '../helpers/media-query.svelte';
 
-	let openMobileMenu: boolean = false;
+    export let openMobileMenu: boolean = false;
 
 	// Mobile menu click event handler
 	const handleMobileIconClick = () => {
 		openMobileMenu = !openMobileMenu;
 	};
+
 </script>
 
 <div>
