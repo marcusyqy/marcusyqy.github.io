@@ -7,7 +7,7 @@ import gfm from 'remark-gfm';
 import parse from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import vfile from 'to-vfile';
-import unified from 'unified';
+import {unified} from 'unified';
 
 let parser = unified().use(parse).use(gfm).use(frontmatter, [ 'yaml' ]);
 
