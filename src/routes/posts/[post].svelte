@@ -13,5 +13,6 @@
   export let post;
 </script>
 
+<h1 class="section-header">{post.metadata.title} <span style="font-size:1rem">({post.metadata.date})</span></h1>
 <!--show the post html with @html-->
 {@html post.content}

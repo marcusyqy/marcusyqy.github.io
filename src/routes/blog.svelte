@@ -26,6 +26,7 @@
       {#each posts as post}
         <a href={`/posts/${post.url}`}>
           <h2 class="title">{post.metadata.title}</h2>
+          <p style="font-size:0.5rem">{post.metadata.date}</p>
           <p>{post.metadata.description}</p>
         </a>
       {/each}
