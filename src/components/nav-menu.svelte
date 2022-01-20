@@ -2,7 +2,7 @@
 <script lang="ts">
 	import Boop from '../animations/boop.svelte';
 	import Hamburger from './hamburger-menu.svelte';
-	import MediaQuery from '../helpers/media-query.svelte';
+	import MediaQuery from '../lib/media-query.svelte';
 
     export let openMobileMenu: boolean = false;
 

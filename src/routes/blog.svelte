@@ -1,6 +1,16 @@
+<script context="module">
+    export async function load({ fetch }) {
+        const posts = await fetch(`posts.json`)
+            .then((r) => r.json());
+        return {
+          props: { posts }
+        }
+  }
+</script>
+
 <script lang="ts">
 	import { slide } from 'svelte/transition';
-
+    export let posts;
 </script>
 
 <svelte:head>
@@ -11,6 +21,15 @@
 	<h1>Marcus Blog</h1>
     <p class="warning">Thoughts are my own.</p>
 	<p class="description">Tech · Life · Food</p>
+    <div>
+    <p class="info">{posts.length} posts.</p>
+      {#each posts as post}
+        <a href={`/${post.slug}`}>
+          <h2 class="title">{post.metadata.title}</h2>
+          <p>{post.metadata.excerpt}</p>
+        </a>
+      {/each}
+    </div>
 </div>
 
 <style>

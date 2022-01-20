@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Boop from '../animations/boop.svelte';
     import NavMenu from './nav-menu.svelte'
-    let openMobileMenu : boolean;
+
+    let openMobileMenu : boolean; // should find a better way for the components to talk to each other.
 </script>
 
 
