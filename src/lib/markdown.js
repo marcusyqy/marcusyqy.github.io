@@ -26,7 +26,7 @@ function process(filename) {
     metadata = {
       title : "Error!",
       date : "?",
-      excerpt : "Missing Frontmatter! Expected at least a title and a date!"
+      description : "Missing Frontmatter! Expected at least a title and a date!"
     };
     content = "Missing Frontmatter! Expected at least a title and a date!"
   }

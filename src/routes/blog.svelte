@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({ fetch }) {
-        const posts = await fetch(`posts.json`)
+        const posts = await fetch(`/blog.json`)
             .then((r) => r.json());
         return {
           props: { posts }
@@ -24,9 +24,9 @@
     <div>
     <p class="info">{posts.length} posts.</p>
       {#each posts as post}
-        <a href={`/${post.slug}`}>
+        <a href={`/posts/${post.url}`}>
           <h2 class="title">{post.metadata.title}</h2>
-          <p>{post.metadata.excerpt}</p>
+          <p>{post.metadata.description}</p>
         </a>
       {/each}
     </div>
