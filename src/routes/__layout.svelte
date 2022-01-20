@@ -4,6 +4,8 @@
 
 <svelte:head>
     <link rel='icon' type='image/svg' href='/assets/favicon.svg'>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark-dimmed.min.css">
 </svelte:head>
 
 <Nav/>
