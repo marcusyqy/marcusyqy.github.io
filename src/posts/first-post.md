@@ -1,7 +1,7 @@
 ---
 title: Creating a blog
 date: 2022-01-20
-excerpt: First blog post
+description: First blog post
 ---
 
 # Lorem Ipsum
