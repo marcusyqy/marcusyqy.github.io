@@ -16,13 +16,13 @@
 		<link rel="stylesheet" href="/_app/assets/vendor-ef2c9ea5.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-1e76ae85.css">
 		<link rel="stylesheet" href="/_app/assets/pages/blog.svelte-84f9aee5.css">
-		<link rel="modulepreload" href="/_app/start-a7592093.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-ac50cdec.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3d060f2a.js">
-		<link rel="modulepreload" href="/_app/pages/blog.svelte-480d62e4.js">
+		<link rel="modulepreload" href="/_app/start-84041140.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-b9f242cd.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f01a7717.js">
+		<link rel="modulepreload" href="/_app/pages/blog.svelte-01973e45.js">
 
 		<script type="module">
-			import { start } from "/_app/start-a7592093.js";
+			import { start } from "/_app/start-84041140.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -34,8 +34,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-3d060f2a.js"),
-						import("/_app/pages/blog.svelte-480d62e4.js")
+						import("/_app/pages/__layout.svelte-f01a7717.js"),
+						import("/_app/pages/blog.svelte-01973e45.js")
 					],
 					url: new URL("http://prerender/blog"),
 					params: {}
@@ -67,9 +67,15 @@
 <div class="about-me svelte-1h87alj"><h1 class="svelte-1h87alj">Marcus Blog</h1>
     <p class="warning svelte-1h87alj">Thoughts are my own.</p>
 	<p class="description svelte-1h87alj">Tech · Life · Food</p>
+    <div><p class="info">2 posts.</p>
+      <a href="/posts/create-your-blog"><h2 class="title">Create Your Blog with SvelteKit</h2>
+          <p>It&#39;s time to rewrite your blog in SvelteKit!</p>
+        </a><a href="/posts/first-post"><h2 class="title">Creating a blog</h2>
+          <p>First blog post</p>
+        </a></div>
 </div>
 
-</div>
+<script type="application/json" data-type="svelte-data" data-url="/blog.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"title\":\"Create Your Blog with SvelteKit\",\"date\":\"2021-04-03T00:00:00.000Z\",\"description\":\"It's time to rewrite your blog in SvelteKit!\",\"url\":\"posts\u002Fcreate-your-blog\"},{\"title\":\"Creating a blog\",\"date\":\"2022-01-20T00:00:00.000Z\",\"description\":\"First blog post\",\"url\":\"posts\u002Ffirst-post\"}]"}</script></div>
 	</body>
 </html>
 

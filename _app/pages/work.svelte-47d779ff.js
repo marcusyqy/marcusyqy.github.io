@@ -1,3 +1,0 @@
-import{S as h,i as f,s as m,j as p,e as k,t as v,_ as x,d as n,l as y,c as W,a as b,g as j,f as i,P as q,Q as E,T as S,U as d,$ as _}from"../chunks/vendor-ac50cdec.js";function C(u){let s,a,l,t,r;return{c(){s=p(),a=k("h1"),l=v("Work"),this.h()},l(e){x('[data-svelte="svelte-y183s3"]',document.head).forEach(n),s=y(e),a=W(e,"H1",{});var c=b(a);l=j(c,"Work"),c.forEach(n),this.h()},h(){document.title=`
-        Works
-    `},m(e,o){i(e,s,o),i(e,a,o),q(a,l),r=!0},p:E,i(e){r||(S(()=>{t||(t=d(a,_,{},!0)),t.run(1)}),r=!0)},o(e){t||(t=d(a,_,{},!1)),t.run(0),r=!1},d(e){e&&n(s),e&&n(a),e&&t&&t.end()}}}class P extends h{constructor(s){super();f(this,s,null,C,m,{})}}export{P as default};
