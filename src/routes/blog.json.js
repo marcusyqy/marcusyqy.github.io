@@ -14,8 +14,8 @@ export function get() {
         };
       });
   // sort the posts by create date.
-  posts.sort((a, b) => (dayjs(a.metadata.date, "MMM D, YYYY") -
-                        dayjs(b.metadata.date, "MMM D, YYYY")));
+  posts.sort((a, b) => (dayjs(b.metadata.date, "MMM D, YYYY") -
+                        dayjs(a.metadata.date, "MMM D, YYYY")));
   let body = JSON.stringify(posts);
 
   return {

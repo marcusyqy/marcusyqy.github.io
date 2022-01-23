@@ -1,6 +1,7 @@
+import rehypePrism from '@mapbox/rehype-prism';
 import dayjs from 'dayjs';
 import yaml from 'js-yaml';
-import highlight from 'rehype-highlight';
+import rehypeHighlight from 'rehype-highlight';
 import rehypeStringify from 'rehype-stringify';
 import frontmatter from 'remark-frontmatter';
 import gfm from 'remark-gfm';
@@ -11,7 +12,10 @@ import {unified} from 'unified';
 
 let parser = unified().use(parse).use(gfm).use(frontmatter, [ 'yaml' ]);
 
-let runner = unified().use(remark2rehype).use(highlight).use(rehypeStringify);
+let runner = unified()
+                 .use(remark2rehype)
+                 .use(rehypeHighlight)
+                 .use(rehypeStringify);
 
 function process(filename) {
   let tree = parser.parse(readSync(filename));
