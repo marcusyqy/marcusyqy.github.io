@@ -1,6 +1,4 @@
 <script>
-    /* export let open; */
-    /* export let duration; */
     export let width;
     export let padding;
     export let paddingTop;
@@ -30,7 +28,7 @@
         flex-direction:column;
         justify-content:center;
     }
- /* left: {open ? '0px' : ('-' + width)}; transition: left {duration}s ease-in-out */
+     /* left: {open ? '0px' : ('-' + width)}; transition: left {duration}s ease-in-out */
 </style>
 
 <div id="container" style="width: {width};" transition:fly={{x:250, opacity:1}}>

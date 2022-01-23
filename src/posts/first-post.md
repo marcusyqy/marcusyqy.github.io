@@ -1,6 +1,6 @@
 ---
-title: Creating a blog
-date: 2022-01-20
+title: Hello World!
+date: 2022-01-22
 description: First blog post
 ---
 
