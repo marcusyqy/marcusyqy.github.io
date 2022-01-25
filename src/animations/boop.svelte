@@ -14,6 +14,10 @@
 </script>
 
 <!-- trigger onclick so demo works on mobile -->
-<span on:mouseenter={triggerBoop} on:click={triggerBoop}  use:boop={{isBooped, ...boopParams, setter: setIsBooped}}>
-	<slot/>
+<span
+	on:mouseenter={triggerBoop}
+	on:click={triggerBoop}
+	use:boop={{ isBooped, ...boopParams, setter: setIsBooped }}
+>
+	<slot />
 </span>

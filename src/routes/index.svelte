@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
-    import { onMount } from 'svelte';
-    import {typewriter} from '../animations/typewriter';
+	import { onMount } from 'svelte';
+	import { typewriter } from '../animations/typewriter';
 
-    let ready = false;
+	let ready = false;
 
-    onMount(()=> ready = true);
+	onMount(() => (ready = true));
 </script>
 
 <svelte:head>
@@ -13,28 +13,28 @@
 </svelte:head>
 
 <div>
-    {#if ready}
-    <div class="box" transition:slide>
-        <div class="words">
-            <p class="ini-para">Hello, I am</p>
-            <p class="name" transition:typewriter>Marcus Yong.</p>
-            <p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
-            <div style="padding-top:2rem;">
-                <a href="docs/resume.pdf" download="marcus-resume">Resume</a>
-            </div>
-        </div>
-        <div class="spacing" />
-        <div class="profile-pic">
-            <!-- svelte-ignore a11y-img-redundant-alt -->
-            <img src="assets/profile.jpg" alt="profile picture here." />
-        </div>
-    </div>
-    {/if}
+	{#if ready}
+		<div class="box" transition:slide>
+			<div class="words">
+				<p class="ini-para">Hello, I am</p>
+				<p class="name" transition:typewriter>Marcus Yong.</p>
+				<p class="desc">I am a software developer/engineer, game developer and hobby artist.</p>
+				<div style="padding-top:2rem;">
+					<a href="docs/resume.pdf" download="marcus-resume">Resume</a>
+				</div>
+			</div>
+			<div class="spacing" />
+			<div class="profile-pic">
+				<!-- svelte-ignore a11y-img-redundant-alt -->
+				<img src="assets/profile.jpg" alt="profile picture here." />
+			</div>
+		</div>
+	{/if}
 </div>
 
 <style>
 	.box {
-        width:50%;
+		width: 50%;
 		display: flex;
 		flex-direction: row;
 		/* padding-right:20rem; */
@@ -45,13 +45,13 @@
 
 	.profile-pic {
 		float: right;
-        margin:10px;
+		margin: 10px;
 	}
 
-    .spacing {
-        width:100px;
-        flex-shrink:none;
-    }
+	.spacing {
+		width: 100px;
+		flex-shrink: none;
+	}
 
 	img {
 		width: 300px;
@@ -74,11 +74,11 @@
 	}
 
 	.words {
-        min-width:340px;
+		min-width: 340px;
 		max-width: 50%;
 		display: block;
 		float: left;
-        margin:10px;
+		margin: 10px;
 	}
 
 	.ini-para {
@@ -116,27 +116,27 @@
 		color: white;
 	}
 
-    @media only screen and (max-width : 767px) {
-        .box{
-            flex-direction: column-reverse;
-            width:100%;
-        }
+	@media only screen and (max-width: 767px) {
+		.box {
+			flex-direction: column-reverse;
+			width: 100%;
+		}
 
-        img {
-            width:200px;
-            height:200px;
-        }
+		img {
+			width: 200px;
+			height: 200px;
+		}
 
-        .words {
-            min-width:unset;
-            display:flex;
-            justify-content:center;
-            align-content:center;
-            flex-direction:column;
-        }
+		.words {
+			min-width: unset;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+		}
 
-        * {
-            text-align: center;
-        }
-    }
+		* {
+			text-align: center;
+		}
+	}
 </style>

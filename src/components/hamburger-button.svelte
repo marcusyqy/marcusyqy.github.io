@@ -19,13 +19,13 @@
 		transition: transform 0.3s ease-in-out;
 	}
 
-    button:hover > svg line {
-        stroke:var(--teal);
-    }
+	button:hover > svg line {
+		stroke: var(--teal);
+	}
 
 	svg line {
 		/* `currentColor` means inherit color from the text color */
-        stroke: white;
+		stroke: white;
 		stroke-width: 3;
 		transition: transform 0.3s ease-in-out;
 		border-style: none;
@@ -33,11 +33,11 @@
 
 	/* adjust the Z-index, so that the icon is on top of the sidebar */
 	button {
-        position:sticky;
-        position:-webkit-sticky;
+		position: sticky;
+		position: -webkit-sticky;
 		border-style: none;
 		background-color: inherit;
-        margin: 5px;
+		margin: 5px;
 	}
 
 	.open svg {
