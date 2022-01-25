@@ -26,7 +26,7 @@
 			<div class="spacing" />
 			<div class="profile-pic">
 				<!-- svelte-ignore a11y-img-redundant-alt -->
-				<img src="assets/profile.jpg" alt="profile picture here." />
+				<img class="logo" src="assets/profile.jpg" alt="profile picture here." />
 			</div>
 		</div>
 	{/if}
@@ -53,7 +53,7 @@
 		flex-shrink: none;
 	}
 
-	img {
+	.logo {
 		width: 300px;
 		height: 300px;
 		border-radius: 50%;
@@ -122,7 +122,7 @@
 			width: 100%;
 		}
 
-		img {
+		.logo {
 			width: 200px;
 			height: 200px;
 		}
