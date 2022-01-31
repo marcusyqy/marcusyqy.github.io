@@ -8,7 +8,6 @@
 </script>
 
 <script lang="ts">
-	import { slide } from 'svelte/transition';
 	export let posts;
 </script>
 
@@ -16,7 +15,7 @@
 	<title>Marcus Blog</title>
 </svelte:head>
 
-<div transition:slide class="about-me">
+<div class="about-me">
 	<h1>Marcus Blog</h1>
 	<p class="warning">Thoughts are my own.</p>
 	<p class="description">Tech · Life · Food</p>
