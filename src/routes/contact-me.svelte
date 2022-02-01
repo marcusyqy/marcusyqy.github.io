@@ -19,7 +19,7 @@
 				><Icon data={linkedin} style="width:2.4rem; height:2.4rem;" /></a
 			>
 		</div>
-		<div style="text-align:center;">
+		<div class="" style="text-align:center;">
 			<a href="https://www.instagram.com/marcusyqy/"
 				><Icon data={instagram} style="width:2.4rem; height:2.4rem;" /></a
 			>
@@ -35,23 +35,25 @@
 
 <style>
 	.overall {
-		width: 50%;
-		margin: auto;
+		@apply w-1/2 m-auto;
+		/* width: 50%; */
+		/* margin: auto; */
 	}
 
 	a {
-		padding: 0.2rem;
-		font-size: 0.4rem;
-		margin: 0px;
-		overflow: hidden;
-		color: white;
+		@apply p-1 overflow-hidden text-xs m-0;
+		/* padding: 0.2rem; */
+		/* font-size: 0.4rem; */
+		/* margin: 0px; */
+		/* overflow: hidden; */
 	}
 
 	a:hover {
-		color: var(--teal);
+		/* color: var(--teal); */
+		@apply text-teal;
 	}
 
 	h1 {
-		text-align: center;
+		@apply text-center; /* text-align: center; */
 	}
 </style>

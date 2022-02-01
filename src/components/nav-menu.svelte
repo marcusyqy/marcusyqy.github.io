@@ -33,13 +33,19 @@
 		{:else}
 			<ul class="flex list-none p-2 overflow-hidden text-base justify-between items-center">
 				<li class="float-right ml-8 font-extralight text-sm font-small">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a class="hover:text-teal" href="/about"><b>About Me</b></a></Boop>
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}
+						><a class="hover:text-teal" href="/about"><b>About Me</b></a></Boop
+					>
 				</li>
 				<li class="float-right ml-8 font-extralight text-sm font-small">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a class="hover:text-teal" href="/work"><b>Work</b></a></Boop>
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}
+						><a class="hover:text-teal" href="/work"><b>Work</b></a></Boop
+					>
 				</li>
 				<li class="float-right ml-8 font-extralight text-sm font-small">
-					<Boop boopParams={{ scale: 1.1, timing: 200 }}><a class="hover:text-teal" href="/blog"><b>Blog</b></a></Boop>
+					<Boop boopParams={{ scale: 1.1, timing: 200 }}
+						><a class="hover:text-teal" href="/blog"><b>Blog</b></a></Boop
+					>
 				</li>
 				<li class="float-right ml-8 font-extralight text-sm font-small">
 					<Boop boopParams={{ scale: 1.1, timing: 200 }}
