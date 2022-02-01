@@ -1,8 +1,8 @@
 <script lang="ts">
-    import "../app.css";
+	import '../app.css';
 	import Nav from '../components/nav.svelte';
-    import { onMount } from 'svelte';
-    import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import { slide } from 'svelte/transition';
 
 	let ready = false;
 	onMount(() => (ready = true));
@@ -18,13 +18,12 @@
 </svelte:head>
 
 <Nav />
-<div class="pt-[2rem]"/>
+<div class="pt-[2rem]" />
 {#if ready}
-<div class="mx-auto w-1/2 justify-center content-center mobile:w-full" transition:slide>
-    <slot />
-</div>
+	<div transition:slide>
+		<slot />
+	</div>
 {/if}
-
 
 <style global>
 	:root {
@@ -35,6 +34,7 @@
 		--box-shadow-shade: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 		--box-shadow-prominent: 0 2px 4px 0 rgba(255, 255, 255, 0.2);
 	}
+
 	body {
 		background-color: #1a1a1a;
 		font-family: var(--big-font);

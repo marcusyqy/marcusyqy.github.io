@@ -5,50 +5,17 @@
 	let openMobileMenu: boolean; // should find a better way for the components to talk to each other.
 </script>
 
-<nav>
-	<div class="flexibox">
+<nav
+	class="sticky top-0 pl-8 pr-8 pt-8 pb-4 m-0 shadow bg-grey mobile:pr-10 mobile:pl-10 drop-shadow-2xl"
+>
+	<div class="flex justify-between items-center">
 		<div>
 			<Boop boopParams={{ scale: 1.2, timing: 200 }}>
 				<a href="/" on:click={() => (openMobileMenu = false)}
-					><img src="/../assets/favicon-dark.png" alt="Home" class="logo" /></a
+					><img src="/../assets/favicon-dark.png" alt="Home" class="w-8 h-8" /></a
 				></Boop
 			>
 		</div>
 		<NavMenu bind:openMobileMenu />
 	</div>
 </nav>
-
-<style>
-	nav {
-		position: -webkit-sticky; /*[> Safari <]*/
-		position: sticky;
-		top: 0;
-		width: 100%-4rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		margin: 0rem;
-		height: 3rem;
-		box-shadow: var(--box-shadow-shade);
-		background-color: var(--grey);
-	}
-
-	.flexibox {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.logo {
-		width: 2rem;
-		height: 2rem;
-	}
-
-	@media only screen and (max-width: 767px) {
-		nav {
-			padding-right: 40px;
-			padding-left: 40px;
-		}
-	}
-</style>
