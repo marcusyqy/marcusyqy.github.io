@@ -15,16 +15,16 @@
 </script>
 
 <div in:fade class="m-4">
-	<h1 class="font-bold underline text-justify text-2xl font-small">
-		{post.metadata.title} <span style="font-size:1rem">({post.metadata.date})</span>
-	</h1>
-	<!--show the post html with @html-->
-	<div class="dummy p-4">
-		{@html post.content}
-	</div>
 </div>
 
 <style>
+    /* <h1 class="font-bold underline text-justify text-2xl font-small"> */
+    /* {post.metadata.title} <span style="font-size:1rem">({post.metadata.date})</span> */
+    /* </h1> */
+    /* <!--show the post html with @html--> */
+    /* <div class="dummy p-4"> */
+    /* {@html post.content} */
+    /* </div> */
     .dummy :global(h1) {
         @apply pt-3 pb-2 font-bold underline text-justify text-2xl font-big;
     }
