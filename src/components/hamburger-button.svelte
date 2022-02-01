@@ -13,6 +13,7 @@
 	</svg>
 </button>
 
+<!-- keeping the styles in because unable to change transition without(not good enough at css :( ) -->
 <style>
 	svg {
 		min-height: 24px;

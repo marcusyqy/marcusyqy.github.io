@@ -27,7 +27,7 @@
 		<div class="w-24 flex-shrink-0" />
 		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img
-			class="flex-shrink-0 w-80 h-80 mobile:w-60 block mobile:h-60 shadow-sm rounded-full object-cover border-teal border-solid mobile:justify-center mobile:m-auto mobile:flex-shrink"
+			class="flex-shrink-0 w-80 h-80 mobile:w-60 block mobile:h-60 shadow-sm rounded-full object-cover mobile:justify-center mobile:m-auto mobile:flex-shrink"
 			src="assets/profile.jpg"
 			alt="profile picture here."
 		/>

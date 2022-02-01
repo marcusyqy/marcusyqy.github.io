@@ -1,38 +1,10 @@
 <script>
-	export let width;
-	export let padding;
-	export let paddingTop;
-
 	import { fly } from 'svelte/transition';
 </script>
 
-<div id="container" style="width: {width};" transition:fly={{ x: 250, opacity: 1 }}>
-	<div id="menu" style="padding: {padding}; padding-top: {paddingTop};">
+<div class="fixed h-screen top-4 overflow-y-auto rounded-xl text-center right-0 shadow shadow-2xl w-80" transition:fly={{ x: 250, opacity: 1 }}>
+	<div class="pt-12 p-6 text-center flex flex-col justify-center">
 		<slot />
 	</div>
 </div>
 
-<style>
-	#container {
-		position: fixed;
-		height: 100vh;
-		top: 5rem;
-		overflow-y: auto;
-		background-color: var(--grey);
-		color: white;
-		box-shadow: var(--box-shadow-prominent);
-		border-radius: 10px;
-		text-align: center;
-		height: 100%;
-		right: 0;
-		overflow-y: auto;
-	}
-
-	#menu {
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	/* left: {open ? '0px' : ('-' + width)}; transition: left {duration}s ease-in-out */
-</style>
