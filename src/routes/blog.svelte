@@ -27,7 +27,7 @@
 			<span class="text-teal">{posts.length}</span> posts.
 		</p>
 		{#each posts as post}
-			<a href={`/posts/${post.url}`}>
+			<a href={`${post.url}`}>
 				<div class="m-2 p-2 border-teal border-b-2 border-dashed hover:border-2 rounded-lg">
 					<h2 class="text-xl text-teal text-underline font-bold">{post.metadata.title}</h2>
 					<p class="text-xs font-small">{post.metadata.date}</p>
