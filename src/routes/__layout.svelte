@@ -2,7 +2,6 @@
 	import '../app.css';
 	import Nav from '../components/nav.svelte';
 	import { onMount } from 'svelte';
-	import { slide } from 'svelte/transition';
 
 	let ready = false;
 	onMount(() => (ready = true));

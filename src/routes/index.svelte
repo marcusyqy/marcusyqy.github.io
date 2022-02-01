@@ -1,19 +1,19 @@
 <script lang="ts">
 	import { typewriter } from '../animations/typewriter';
-	import { slide, fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 </script>
 
 <svelte:head>
 	<title>Marcus Yong Portfolio</title>
 </svelte:head>
 
-<div class="mx-auto w-1/2 justify-center content-center mobile:w-full" in:slide out:fade>
+<div class="mx-auto w-1/2 justify-center content-center mobile:w-full" in:fade>
 	<div class="flex flex-row content-center mobile:flex-col-reverse m-0 p-0">
 		<div
 			class="text-left block float-left m-3 mobile:text-center mobile:flex mobile:content-center mobile:items-center mobile:flex-col"
 		>
 			<p class="pt-8 font-small text-sm text-teal">Hello, I am</p>
-			<p class="font-big text-4xl text-white" transition:typewriter>Marcus Yong.</p>
+			<p class="font-big text-4xl text-white" in:typewriter>Marcus Yong.</p>
 			<p class="decoration-teal font-big text-sm text-white underline">
 				I am a software developer/engineer, game developer and hobby artist.
 			</p>

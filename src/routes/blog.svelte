@@ -8,7 +8,7 @@
 </script>
 
 <script lang="ts">
-	import { slide, fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	export let posts;
 </script>
 
@@ -17,8 +17,7 @@
 </svelte:head>
 
 <div
-	in:slide
-	out:fade
+	in:fade
 	class="w-1/2 flex flex-col m-auto items-center justify-center text-center mobile:w-full"
 >
 	<h1 class="m-1 text-4xl font-big">Marcus Blog</h1>
