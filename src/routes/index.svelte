@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { typewriter } from '../animations/typewriter';
+	import { slide, fade } from 'svelte/transition';
 </script>
 
 <svelte:head>
 	<title>Marcus Yong Portfolio</title>
 </svelte:head>
 
-<div class="mx-auto w-1/2 justify-center content-center mobile:w-full">
+<div class="mx-auto w-1/2 justify-center content-center mobile:w-full" in:slide out:fade>
 	<div class="flex flex-row content-center mobile:flex-col-reverse m-0 p-0">
 		<div
 			class="text-left block float-left m-3 mobile:text-center mobile:flex mobile:content-center mobile:items-center mobile:flex-col"

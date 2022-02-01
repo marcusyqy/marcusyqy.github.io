@@ -9,10 +9,11 @@
 
 <script>
 	// post will have metadata and content
+	import { fade, slide } from 'svelte/transition';
 	export let post;
 </script>
 
-<div class="m-4">
+<div in:slide out:fade class="m-4">
 	<h1 class="font-bold underline text-justify text-2xl font-small">
 		{post.metadata.title} <span style="font-size:1rem">({post.metadata.date})</span>
 	</h1>

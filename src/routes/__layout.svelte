@@ -20,9 +20,7 @@
 <Nav />
 <div class="pt-[2rem]" />
 {#if ready}
-	<div transition:slide>
-		<slot />
-	</div>
+	<slot />
 {/if}
 
 <style global>

@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Icon from 'svelte-awesome';
 	import { github, linkedin, instagram, twitter, twitch } from 'svelte-awesome/icons';
-	import { fade } from 'svelte/transition';
+	import { slide, fade } from 'svelte/transition';
 </script>
 
 <svelte:head>
 	<title>Contact Marcus Yong</title>
 </svelte:head>
 
-<div transition:fade class="overall">
+<div in:slide out:fade class="overall">
 	<h1>Contact Me</h1>
 	<div style="display:flex; flex-direction:column; justify-content:center;">
 		<div style="text-align:center;">
