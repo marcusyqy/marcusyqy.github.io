@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-37e4c785.js",
+    "file": "start-1badb3b8.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -72,15 +72,12 @@
     ]
   },
   "src/routes/posts/[post].svelte": {
-    "file": "pages/posts/_post_.svelte-b49db115.js",
+    "file": "pages/posts/_post_.svelte-404be9ec.js",
     "src": "src/routes/posts/[post].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-33fc3901.js"
-    ],
-    "css": [
-      "assets/pages/posts/_post_.svelte-f3ce0cf5.css"
     ]
   },
   "src/routes/blog.svelte": {
