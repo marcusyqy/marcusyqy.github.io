@@ -1,26 +1,27 @@
 <script context="module">
-	export async function load({ params, fetch }) {
-		const post = await fetch(`/posts/${params.post}.json`).then((r) => r.json());
-		return {
-			props: { post }
-		};
-	}
+    export async function load({ params, fetch }) {
+        console.log(`${params.post}`);
+            const post = await fetch(`${params.post}.json`).then((r) => r.json());
+        return {
+            props: { post }
+        };
+    }
 </script>
 
 <script>
 	// post will have metadata and content
 	import { fade } from 'svelte/transition';
-	export let post;
+    export let post;
 </script>
 
 <div in:fade class="m-4">
-	<h1 class="font-bold underline text-justify text-2xl font-small">
-		{post.metadata.title} <span style="font-size:1rem">({post.metadata.date})</span>
-	</h1>
-	<!--show the post html with @html-->
-	<div class="dummy p-4">
-		{@html post.content}
-	</div>
+    <h1 class="font-bold underline text-justify text-2xl font-small">
+        {post.metadata.title} <span style="font-size:1rem">({post.metadata.date})</span>
+    </h1>
+    <!--show the post html with @html-->
+    <div class="dummy p-4">
+        {@html post.content}
+    </div>
 </div>
 
 <style>
