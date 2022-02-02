@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-aac3d4b1.js",
+    "file": "start-5b0eed48.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -12,12 +12,12 @@
       "src/routes/index.svelte",
       "src/routes/contact-me.svelte",
       "src/routes/about.svelte",
-      "src/routes/posts/__error.svelte",
       "src/routes/posts/create-your-blog.md",
       "src/routes/posts/first-post.md",
-      "src/routes/posts/[post].svelte",
       "src/routes/blog.svelte",
-      "src/routes/work.svelte"
+      "src/routes/work.svelte",
+      "src/routes/tmp/__error.svelte",
+      "src/routes/tmp/[post].svelte"
     ],
     "css": [
       "assets/start-d5b4de3e.css"
@@ -74,15 +74,6 @@
       "_vendor-33fc3901.js"
     ]
   },
-  "src/routes/posts/__error.svelte": {
-    "file": "pages/posts/__error.svelte-c4d7340e.js",
-    "src": "src/routes/posts/__error.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-33fc3901.js"
-    ]
-  },
   "src/routes/posts/create-your-blog.md": {
     "file": "pages/posts/create-your-blog.md-74f3ea91.js",
     "src": "src/routes/posts/create-your-blog.md",
@@ -101,18 +92,6 @@
       "_vendor-33fc3901.js"
     ]
   },
-  "src/routes/posts/[post].svelte": {
-    "file": "pages/posts/_post_.svelte-5a0a659e.js",
-    "src": "src/routes/posts/[post].svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-33fc3901.js"
-    ],
-    "css": [
-      "assets/pages/posts/_post_.svelte-f3ce0cf5.css"
-    ]
-  },
   "src/routes/blog.svelte": {
     "file": "pages/blog.svelte-b3fd7f80.js",
     "src": "src/routes/blog.svelte",
@@ -129,6 +108,27 @@
     "isDynamicEntry": true,
     "imports": [
       "_vendor-33fc3901.js"
+    ]
+  },
+  "src/routes/tmp/__error.svelte": {
+    "file": "pages/tmp/__error.svelte-2e338b6d.js",
+    "src": "src/routes/tmp/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-33fc3901.js"
+    ]
+  },
+  "src/routes/tmp/[post].svelte": {
+    "file": "pages/tmp/_post_.svelte-b230cc9f.js",
+    "src": "src/routes/tmp/[post].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-33fc3901.js"
+    ],
+    "css": [
+      "assets/pages/tmp/_post_.svelte-7a4052b1.css"
     ]
   },
   "_vendor-33fc3901.js": {
