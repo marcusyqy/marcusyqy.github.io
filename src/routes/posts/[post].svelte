@@ -1,11 +1,19 @@
 <script context="module">
     export async function load({ params, fetch }) {
         console.log(`${params.post}`);
-            const post = await fetch(`${params.post}.json`).then((r) => r.json());
-        return {
-            props: { post }
-        };
-    }
+        const url = `/posts/${params.post}.json`;
+        const res = await fetch(url); //.then((r) => r.json());
+        if (res.ok) {
+			return {
+                props: { post : await res.json() }
+			};
+		}
+
+		return {
+			status: res.status,
+			error: new Error(`Could not load ${url}`)
+		};
+	}
 </script>
 
 <script>
