@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({ params, fetch }) {
-        const url = `/posts/${params.post}.json`;
+        const url = `${params.post}.json`;
         const res = await fetch(url); //.then((r) => r.json());
         if (res.ok) {
 			return {
