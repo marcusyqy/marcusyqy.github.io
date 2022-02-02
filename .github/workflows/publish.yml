@@ -27,6 +27,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install and Build 🔧
         run: |
+          node -v
+          npm -v
           npm install
           npm run build
 
