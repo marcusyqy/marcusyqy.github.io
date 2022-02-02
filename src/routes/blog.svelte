@@ -35,5 +35,14 @@
 				</div>
 			</a>
 		{/each}
+		{#each posts as post}
+			<a href={`/tmp/${post.url}`}>
+				<div class="m-2 p-2 border-teal border-b-2 border-dashed hover:border-2 rounded-lg">
+					<h2 class="text-xl text-teal text-underline font-bold">{post.metadata.title}</h2>
+					<p class="text-xs font-small">{post.metadata.date}</p>
+					<p class="text-sm font-small italic">{post.metadata.description}</p>
+				</div>
+			</a>
+		{/each}
 	</div>
 </div>

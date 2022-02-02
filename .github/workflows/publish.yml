@@ -30,6 +30,7 @@ jobs:
           node -v
           npm -v
           npm install
+          npm run clean
           npm run build
 
       - name: Deploy 🚀
