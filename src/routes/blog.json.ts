@@ -4,10 +4,10 @@ import dayjs from 'dayjs';
 
 export function get() {
 	let posts = fs
-		.readdirSync(`src/posts`)
+		.readdirSync(`src/routes/posts`)
 		.filter((fileName) => /.+\.md$/.test(fileName))
 		.map((fileName) => {
-			const { metadata } = process(`src/posts/${fileName}`);
+			const { metadata } = process(`src/routes/posts/${fileName}`);
 			return {
 				metadata,
 				url: fileName.slice(0, -3)
