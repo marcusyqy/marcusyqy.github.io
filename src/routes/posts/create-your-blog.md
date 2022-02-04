@@ -1,6 +1,6 @@
 ---
 title: Create Your Blog with SvelteKit
-date: 2021-04-03
+date: "2021-04-03"
 description: It's time to rewrite your blog in SvelteKit!
 ---
 
