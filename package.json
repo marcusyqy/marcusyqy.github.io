@@ -14,7 +14,7 @@
 		"build:win32": "(if exist build rmdir /Q /S build) && svelte-kit build && wsl touch build/.nojekyll",
 		"build:darwin:linux": "rm -rf build && svelte-kit build && touch build/.nojekyll",
 		"publish": "npm run build && npm run deploy",
-        "clean": "trash build"
+		"clean": "trash build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",

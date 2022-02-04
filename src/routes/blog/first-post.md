@@ -1,9 +1,8 @@
 ---
 title: Hello World!
-date: "2022-01-22"
+date: '2022-01-22'
 description: First blog post
 ---
-
 
 # Lorem Ipsum
 
