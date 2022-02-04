@@ -1,4 +1,4 @@
-import rehypePrism from '@mapbox/rehype-prism';
+// import rehypePrism from '@mapbox/rehype-prism';
 import dayjs from 'dayjs';
 import yaml from 'js-yaml';
 import rehypeHighlight from 'rehype-highlight';

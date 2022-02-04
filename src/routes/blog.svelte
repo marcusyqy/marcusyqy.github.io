@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
 	export async function load({ fetch }) {
 		const posts = await fetch(`/blog.json`).then((r) => r.json());
 		return {

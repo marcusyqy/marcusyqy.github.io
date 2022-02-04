@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
     export async function load({ params, fetch }) {
         const url = `${params.slug}.json`;
         const res = await fetch(url); //.then((r) => r.json());
