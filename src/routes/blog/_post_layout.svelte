@@ -37,6 +37,6 @@
         @apply text-justify text-base font-big;
     }
     .dummy :global(code) {
-        @apply font-bold font-small;
+        @apply font-small;
     }
 </style>

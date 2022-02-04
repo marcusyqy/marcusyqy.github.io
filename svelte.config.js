@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import {mdsvex} from 'mdsvex';
+import rehypeHighlight from 'rehype-highlight';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
