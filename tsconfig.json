@@ -25,7 +25,9 @@
 		"paths": {
 			"$lib": ["src/lib"],
 			"$lib/*": ["src/lib/*"]
-		}
+		},
+		"outDir": "build"
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.md", "src/**/*.ts", "src/**/*.svelte"]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.md", "src/**/*.ts", "src/**/*.svelte"],
+	"exclude": ["build"]
 }
