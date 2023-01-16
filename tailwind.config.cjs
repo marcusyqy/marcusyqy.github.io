@@ -1,18 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
-		fontFamily: {
-			big: ['"Helvetica Neue"', '"Helvetica"', '"Arial"', 'sans-serif'],
-			small: ['"Fira Code"', 'monospace']
-		},
-		screens: {
-			mobile: { max: '767px' }
-		},
-		colors: {
-			teal: '#01d8b7',
-			grey: '#1a1a1a'
-		}
-	},
-	plugins: []
-};
+		extend: {
+            fontFamily : {
+                noto : ["'Noto Sans'", 'Verdana', 'sans-serif']
+            }
+        },
+	}
+}
